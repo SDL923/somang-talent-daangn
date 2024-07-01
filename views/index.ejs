@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PU:UM STORE</title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+
+            margin: 0;
+        }
+    </style>
+
+    <!-- meta -->
+    <meta property="og:url" content="https://www.somang.store/">
+    <meta property="og:title" content="PU:UM STORE">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/img_url">
+    <meta property="og:description" content="소망교회 대학부 여름수련회">
+
+    <!-- Google tag (gtag.js) 방문분석 --> 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KL4T69BQF2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-KL4T69BQF2');
+    </script>
+
+</head>
+<body style="overflow:scroll;">
+
+    <div style="width: 100%; height: 100%;  text-align: center;">
+        <div style="height: 35px; width: 100%; margin-top: 10px;">
+            <img src="/img_poom" alt="no img;" style="width: 52px; height: 35px; float: left; margin-left: 8px;">
+            <img src="/img_timeschedule" alt="no img;" onclick="location.href='/timeschedule_move'" style="width: 35px; height: 35px; float: right; margin-right: 10px;">
+            <img src="/img_bible" alt="no img;" onclick="location.href='/bible_move'" style="width: 40px; height: 35px; float: right; margin-right: 8px;">
+        </div>
+
+
+        <div style="width: 100%; height: 25px;"></div>
+
+        <img src="/img_wakeup" alt="no img;" style="width: 200px; height: 120px;">
+
+        <div style="width: 100%; height: 35px;"></div>
+
+        <form action="/name" method="get" style="height: 50px;">
+            <label style="font-size: 20px; font-weight: bold; margin-right: 3px;">학번:</label>
+            <input type="text" id="fyear" name="fyear" style="width: 30px; height: 25px; font-size: 20px; margin-right: 10px;">
+
+
+            <label style="font-size: 20px; font-weight: bold; margin-right: 3px; margin-right: 5px;">이름:</label>
+            <input type="text" id="fname" name="fname" style="width: 70px; height: 25px; font-size: 20px;">
+
+            <input type="submit" value="GO" style="width: 40px; height: 30px; text-align: center; margin-left: 10px; color: white; background-color: #3478F6; border-radius: 30px; outline:none; font-weight: bold;">
+        </form> 
+
+        
+        <div style="width: 100%; height: 20px;"></div>
+
+        <div style="height: 200px; width: 90%; margin-left: 5%; margin-right: 5%; background-color: #EDEDED; border-radius: 20px;">
+            <div style="height: 20px;"></div>
+            <div style="margin-left: 0 auto; margin-right: 0 auto; font-size: 22px; font-weight: bold;"><%= name %>의 달란트는?</div>
+            <div style="height: 15px;"></div>
+            <div style="height: 100px; text-align: center; margin:0 auto; display: flex; justify-content: center;">
+
+                <img src="/img_coin" alt="no img" style="width: 80px; height: 80px; margin-top: 15px; margin-right: 25px;">
+                <h1 style="font-size: 75px; margin: 0; color: rgb(0, 0, 0); display: inline; line-height: 100px;">×  <%= num %></h1>
+                <!-- <h1 style="font-size: 70px; margin: 0; color: rgb(255, 255, 255); text-shadow: -3px 0px black, 0px 3px black, 3px 0px black, 0px -3px black; display: inline;">×  <%= num %></h1> -->
+                <!-- <label style="font-size: 80px;">  ×  <%= num %></label> -->
+            </div>
+        </div>
+
+        <div style="width: 100%; height: 15px;"></div>
+
+        <!-- <div style="width: 95%; aspect-ratio: 3 / 1; margin-left: 2.5%; margin-right: 2.5%;">
+            <img src="/img_market" alt="no img;" onclick="location.href='/market_move'" style="width: 30%; padding-bottom: 30%;">
+            <img src="/img_game" alt="no img;" onclick="location.href='/game_move'" style="width: 30%; padding-bottom: 30%;">
+            <img src="/img_information" alt="no img;" onclick="location.href='/informaion_move'" style="width: 30%; padding-bottom: 30%;">
+        </div> -->
+
+        <div style="width: 95%; margin-left: 2.5%; margin-right: 2.5%;">
+            <img src="/img_market" alt="no img;" onclick="location.href='/market_move'" style="width: 30%; ">
+            <img src="/img_game" alt="no img;" onclick="location.href='/game_move'" style="width: 30%; ">
+            <img src="/img_information" alt="no img;" onclick="location.href='/informaion_move'" style="width: 30%;">
+        </div>
+
+        <div style="width: 80%; margin-left: 10%; margin-right: 10%; margin-top: 15px;">
+            <img src="/img_teacher" alt="no img;" onclick="location.href='/teacher_move'" style="width: 45%; ">
+            <img src="/img_playlist" alt="no img;" onclick="location.href='/playlist_move'" style="width: 45%; ">
+        </div>
+
+
+        <div style="width: 100%; height: 130px;"></div>
+
+        <div style="width: 100%; height: 200px;">
+            <img style="width: 185px; height: 150px;" src="https://i.pinimg.com/originals/98/40/aa/9840aa274ec5f747790b980bf481d18f.gif" alt="no img;"> 
+        </div>
+
+
+    </div>
+  
+        
+</body>
+</html>
